@@ -1,0 +1,27 @@
+.navbar {
+    background-color: #343a40;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+}
+
+.navbar .navbar-brand {
+    color: white;
+    font-size: x-large;
+}
+
+.navbar .nav-link {
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+    font-size: large;
+
+    
+}
+
+@media (max-width: 576px) {
+    .navbar .nav-link {
+        margin-right: 0;
+    }
+}
