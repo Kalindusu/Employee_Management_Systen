@@ -63,10 +63,12 @@ public class EmployeeController {
 
         if(updatedEmployee==null) return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         return ResponseEntity.ok(updatedEmployee);
-
-
-
     }
+//    @PostMapping("/login")
+//    public ResponseEntity<?> loginEmployee(@RequestBody LoginDTO loginDTO){
+//        LoginMessage loginMessage=employeeService.loginEmployee(loginDTO);
+//        return ResponseEntity.ok(loginMessage);
+//    }
 
 
 }
