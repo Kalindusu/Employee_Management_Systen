@@ -14,11 +14,13 @@ public class Employee {
     private String phone;
     private  String department;
     private String leaves;
-
+    private  String password;
+    private  String confirmPassword;
     private String leaveType;
 
 
-    public Employee(Long id, String name, String email, String phone, String department,String leaves,String leaveType) {
+
+    public Employee(Long id, String name, String email, String phone, String department, String leaves, String leaveType,String password, String confirmPassword) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -26,6 +28,8 @@ public class Employee {
         this.department = department;
         this.leaves=leaves;
         this.leaveType=leaveType;
+        this.password = password;
+        this.confirmPassword = confirmPassword;
     }
 
     public Employee() {
@@ -85,5 +89,21 @@ public class Employee {
 
     public void setLeaveType(String leaveType) {
         this.leaveType = leaveType;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getConfirmPassword() {
+        return confirmPassword;
+    }
+
+    public void setConfirmPassword(String confirmPassword) {
+        this.confirmPassword = confirmPassword;
     }
 }
