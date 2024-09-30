@@ -25,7 +25,7 @@ function Header() {
           <Nav className="me-right ">
           <Nav.Link as={Link} to="/employee">Add Employee</Nav.Link>
             <Nav.Link >|</Nav.Link>
-            <Nav.Link as={Link} to="/">Logout</Nav.Link>
+            <Nav.Link as={Link} to="login">Logout</Nav.Link>
             
             
           </Nav>

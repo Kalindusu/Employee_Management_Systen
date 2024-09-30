@@ -23,7 +23,7 @@ const UpdateUser = () => {
         try {
           const response = await fetch(`http://localhost:8080/getEmployee/${id}`);
           const data = await response.json();
-          setFormData(data); // Populate form with fetched data
+          setFormData(data); 
         } catch (error) {
           console.log("Error fetching employee data:", error);
         }
@@ -100,7 +100,7 @@ const UpdateUser = () => {
                     />
                 </Form.Group>
                 <Button variant="primary" type="submit" className="w-100">
-                    Edit Employee
+                    Save Update
                 </Button>
             </form>
         </div>
