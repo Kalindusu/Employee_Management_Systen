@@ -24,12 +24,6 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-
-//    @GetMapping("/getEmployee")
-//    List<Employee>  getAllUsers(){
-//        return employeeRepository.findAll();
-//    }
-
     @GetMapping("/getEmployee")
     List<Employee> getAllUsers(){
     return employeeRepository.findAll();
@@ -38,9 +32,7 @@ public class EmployeeController {
     @PostMapping("/saveEmployee")
     public EmployeeDTO saveUser(@RequestBody EmployeeDTO employeeDTO){
         return employeeService.saveUser(employeeDTO);
-
     }
-
    //delete User
     @DeleteMapping("/getEmployee/{id}")
     public ResponseEntity<?> deleteUser(@PathVariable Long id){
