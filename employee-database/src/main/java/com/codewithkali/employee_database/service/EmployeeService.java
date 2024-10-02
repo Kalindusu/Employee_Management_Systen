@@ -25,12 +25,6 @@ public class EmployeeService {
         return employeeDTO;
     }
 
-    //delete User
-
-//    public Boolean deleteUser(EmployeeDTO employeeDTO){
-//        employeeRepository.delete(modelMapper.map(employeeDTO,Employee.class));
-//        return true;
-//    }
     public void deleteUser(Long id){
         if(!employeeRepository.existsById(id)){
             throw new EntityNotFoundException("Employee with ID" + id + "not found");
