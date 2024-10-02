@@ -63,7 +63,7 @@ public class EmployeeController {
 //        return ResponseEntity.ok(loginMessage);
 //    }
 
-    @PostMapping("/loginUser")
+    @PostMapping("/login")
     public Boolean loginUser(@RequestBody LoginRequest loginRequest){
         return  employeeService.loginUser(loginRequest);
     }

@@ -19,6 +19,7 @@ public class Employee {
 
 
 
+
     public Employee(Long id, String name, String email, String phone, String department, String leaves, String leaveType,String password ) {
         this.id = id;
         this.name = name;
