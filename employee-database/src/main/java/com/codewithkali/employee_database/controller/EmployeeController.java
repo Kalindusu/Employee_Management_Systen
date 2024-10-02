@@ -1,5 +1,6 @@
 package com.codewithkali.employee_database.controller;
 
+import com.codewithkali.employee_database.Request.LoginRequest;
 import com.codewithkali.employee_database.dto.EmployeeDTO;
 import com.codewithkali.employee_database.entity.Employee;
 import com.codewithkali.employee_database.repo.EmployeeRepository;
@@ -61,6 +62,11 @@ public class EmployeeController {
 //        LoginMessage loginMessage=employeeService.loginEmployee(loginDTO);
 //        return ResponseEntity.ok(loginMessage);
 //    }
+
+    @PostMapping("/loginUser")
+    public Boolean loginUser(@RequestBody LoginRequest loginRequest){
+        return  employeeService.loginUser(loginRequest);
+    }
 
 
 }

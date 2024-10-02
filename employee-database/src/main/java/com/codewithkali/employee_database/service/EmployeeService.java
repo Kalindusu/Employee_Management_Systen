@@ -1,5 +1,6 @@
 package com.codewithkali.employee_database.service;
 
+import com.codewithkali.employee_database.Request.LoginRequest;
 import com.codewithkali.employee_database.dto.EmployeeDTO;
 import com.codewithkali.employee_database.entity.Employee;
 import com.codewithkali.employee_database.repo.EmployeeRepository;
@@ -53,6 +54,27 @@ public class EmployeeService {
             return  employeeRepository.save(existingEmployee);
         }
         return null;
+    }
+    public  Boolean loginUser(LoginRequest loginRequest){
+        Optional<Employee> employee= EmployeeRepository.findByEmail(loginRequest.getEmail());
+        Employee employee1=employee.get();
+
+        if(employee1==null){
+            return false;
+        }
+
+
+
+        if(!employee1.getPassword().equals(loginRequest.getPassword())){
+            return  false;
+        }
+
+        return  true;
+
+
+
+
+
     }
 
 

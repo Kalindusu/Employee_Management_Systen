@@ -11,7 +11,7 @@ public class EmployeeDTO {
 
     private String leaves;
     private  String password;
-    private  String confirmPassword;
+
 
     public EmployeeDTO(Long id, String name, String email, String phone, String department, String leaveType, String leaves, String password, String confirmPassword) {
         this.id = id;
@@ -22,7 +22,7 @@ public class EmployeeDTO {
         this.leaveType = leaveType;
         this.leaves = leaves;
         this.password = password;
-        this.confirmPassword = confirmPassword;
+
     }
 
     public Long getId() {
@@ -88,13 +88,9 @@ public class EmployeeDTO {
         this.password = password;
     }
 
-    public String getConfirmPassword() {
-        return confirmPassword;
-    }
 
-    public void setConfirmPassword(String confirmPassword) {
-        this.confirmPassword = confirmPassword;
-    }
+
+
 
     @Override
     public String toString() {
@@ -107,7 +103,6 @@ public class EmployeeDTO {
                 ", leaveType='" + leaveType + '\'' +
                 ", leaves='" + leaves + '\'' +
                 ", password='" + password + '\'' +
-                ", confirmPassword='" + confirmPassword + '\'' +
                 '}';
     }
 }
