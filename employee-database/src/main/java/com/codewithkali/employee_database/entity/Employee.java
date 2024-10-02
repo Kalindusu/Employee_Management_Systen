@@ -15,12 +15,11 @@ public class Employee {
     private  String department;
     private String leaves;
     private  String password;
-    private  String confirmPassword;
     private String leaveType;
 
 
 
-    public Employee(Long id, String name, String email, String phone, String department, String leaves, String leaveType,String password, String confirmPassword) {
+    public Employee(Long id, String name, String email, String phone, String department, String leaves, String leaveType,String password ) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -29,7 +28,6 @@ public class Employee {
         this.leaves=leaves;
         this.leaveType=leaveType;
         this.password = password;
-        this.confirmPassword = confirmPassword;
     }
 
     public Employee() {
@@ -99,11 +97,4 @@ public class Employee {
         this.password = password;
     }
 
-    public String getConfirmPassword() {
-        return confirmPassword;
-    }
-
-    public void setConfirmPassword(String confirmPassword) {
-        this.confirmPassword = confirmPassword;
-    }
 }
